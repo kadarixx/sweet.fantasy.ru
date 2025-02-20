@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <title>Sweet fantasy-Сладкая фантазия</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="styles/style.css">
+    </head> 
+    <body>
+        <header>
+            <div>
+                <a class="a-glav" href="index.html"> <h2 class="h2-1">Sweet <br> Fantasy</h2></a>
+                <a class="a-glav" href="katalog.html">Каталог</a>
+                <a class="a-glav" href="about.html">О нас</a>
+                <a class="a-glav" href="delivery.html">Доставка и оплата</a>
+                <a class="a-glav" href="contacts.html">Контакты</a>
+                <a class="a-glav" href="form.html"><img src="img/icon.png" alt="icon" ></a>
+            </div>
+        </header>
+        <main>
+            <div class="div1">
+                <h2 class="h2-menu">Sweet fantasy</h2>
+                <h3 class="h3-menu">Сладостей много не бывает!</h3>
+                <input class="button-zacas" value="Заказать" type="submit" href="forma.html">
+            </div>
+            <div class="div-2">
+                <img class="img2" src="img/fon1.png" alt="fon-1" width="500" height="500">
+                <img class="img4" src="img/fon2.png" alt="icon3" width="400" height="400">
+                <img class="img3" src="img/coocie.png" alt="coocie" width="400" height="400">
+            </div>
+            <div class="pusto"></div>
+            <h2 class="h2-main">Новинки</h2>
+
+
+            <div class="carousel">
+                <div class="carousel-item active" id="div-novinki">
+                    <img src="img/heart.png" alt="fon1" width="400" height="400">
+                    <div class="p-1">
+                        <p>Булочка с сахаром</p>
+                        <p>149 р.</p>
+                        <p>★★★★★</p>
+                        <p>78 отзывов</p>
+                    </div>
+                </div>
+                <div class="carousel-item" id="div-novinki">
+                    <img src="img/trubochka.png" alt="fon2" width="400" height="400">\
+                    <div class="p-1">
+                        <p>Трубочка с вареньем</p>
+                        <p>89 р.</p>
+                        <p>★★★★★</p>
+                        <p>45 отзывов</p>
+                    </div>
+                </div>
+                <div class="carousel-item" id="div-novinki">
+                    <img src="img/cinabon.png" alt="fon3" width="400" height="400">
+                    <div class="p-1">
+                        <p>Синнабон</p>
+                        <p>179 р.</p>
+                        <p>★★★★★</p>
+                        <p>78 отзывов</p>
+                    </div>
+                </div>
+            </div>
+        
+            
+            <div class="pusto"></div>
+
+
+
+
+            <form class="form" action="php/feedback.php" method="POST">
+                <div class="logo">
+                    <h1>РАССКАЖЕМ ОБ АКЦИЯХ</h1>
+                </div>
+                <div class="loginparol" >
+                    <input class="vvod" name="username" id="username" placeholder="Имя" type="text" >
+                </div>
+                <div class="loginparol">
+                    <input class="vvod" name="email" id="e-mail" placeholder="E-mail" type="text" >
+                </div>
+                <input class="ok" value="Подписаться"  type="submit">
+                <img class="imgform" src="img/pechenka.png" alt="fon5" width="500" height="400">
+                <div class="pusto"></div>
+            </form>
+
+
+
+
+        </main>
+        <footer>
+            <div class="div-footer">
+                <div class="pusto"></div>
+                <a class="a-footer" href="index.html">Главная</a>
+                <a class="a-footer-2" href="about.html">Почему мы?</a>
+                <a class="a-footer-3">+7(900)234-34-45</a>
+                <a class="a-footer-4">sweet.fantasy@mail.ru</a>
+                <a class="a-footer-5">г. Воронеж, Ленинский проспект, д. 6</a>
+                <label>
+                    <button class="button-footer">
+                        Запросить звонок
+                    </button>
+                </label>
+                <div class="pusto"></div>
+            </div>
+        </footer>
+    </body>
+    <script>
+        function openPopup() {
+            window.open("delivery.html", "popupWindow", "width=600,height=400");
+        }
+
+        
+       // Создание переменных для управления каруселью
+        let currentIndex = 0; // Индекс активного элемента карусели
+        let items = document.querySelectorAll('.carousel-item'); // Получаем все элементы карусели
+        let totalItems = items.length; // Общее количество элементов карусели
+
+        // Функция для отображения следующего элемента карусели
+        function showNextItem() {
+            // Удаляем класс 'active' у текущего элемента, чтобы скрыть его
+            items[currentIndex].classList.remove('active');
+
+            // Обновляем индекс текущего элемента карусели для перехода к следующему элементу
+            currentIndex = (currentIndex + 1) % totalItems;
+
+            // Добавляем класс 'active' к следующему элементу, чтобы показать его
+            items[currentIndex].classList.add('active');
+        }
+
+        // Устанавливаем интервал времени для автоматической смены элементов карусели
+        setInterval(showNextItem, 3000); // Смена товара каждые 3 секунды
+
+    
+    </script>
+
+</html>

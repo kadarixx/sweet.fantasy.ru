@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <title>Sweet fantasy-Сладкая фантазия</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="styles/delivery.css">
+        <script src="js/script.js"></script>
+    </head> 
+    <body>
+        <header>
+            <div>
+                <a class="a-glav" href="index.html"> <h2 class="h2-1">Sweet <br> Fantasy</h2></a>
+                <a class="a-glav" href="katalog.html">Каталог</a>
+                <a class="a-glav" href="about.html">О нас</a>
+                <a class="a-glav" href="delivery.html">Доставка и оплата</a>
+                <a class="a-glav" href="contacts.html">Контакты</a>
+                <a class="a-glav" href="form.html"><img src="img/icon.png" alt="icon"></a>
+            </div>
+        </header>
+        <main>
+            <h1 class="h1-dos">Доставка и оплата</h1>
+            <!-- <h2 class="h2-dos">Доставка в Россия, Воронежская обл., г.Вороненж</h2> -->
+            <div  id="div1" onclick="div_color('div1')">
+                <p class="p-d">Самовывоз<br>
+                1 день<br>
+                Беслпатно</p>
+            </div> 
+            <div id="div2" onclick="div_color('div2')">
+                <p class="p-d">Курьер<br>
+                1 день<br>
+                от 500 руб</p>
+            </div>
+            <div id="div3" onclick="div_color('div3')">
+                <p>Способ <br>оплаты</p>
+            </div>
+            <h2 class="h2-main">Основной пункт самовывоза: <br><br>г. Воронеж, Ленинский проспект, д.6</h2>
+            <div class="pusto"></div>
+
+
+
+
+            <form class="form" action="php/feedback.php" method="POST">
+                <div class="logo">
+                    <h1>ХОТИТЕ ПОЛУЧИТЬ СКИДКУ?</h1>
+                </div>
+                <div class="loginparol">
+                    <input class="vvod" name="username" id="username" placeholder="Имя" type="text">
+                </div>
+                <div class="loginparol">
+                    <input class="vvod" name="email" id="e-mail" placeholder="E-mail" type="text">
+                </div>
+                <input class="ok" value="Подписаться"  type="submit">
+                <img class="imgform" src="img/pechenka.png" alt="fon5" width="500" height="400">
+                <div class="pusto"></div>
+            </form>
+
+
+
+            
+            <div class="pusto"></div>
+        </main>
+        <footer>
+            <div class="div-footer">
+                <div class="pusto"></div>
+                <a class="a-footer" href="index.html">Главная</a>
+                <a class="a-footer-2" href="about.html">Почему мы?</a>
+                <a class="a-footer-3">+7(900)234-34-45</a>
+                <a class="a-footer-4">sweet.fantasy@mail.ru</a>
+                <a class="a-footer-5">г. Воронеж, Ленинский проспект, д. 6</a>
+                <label>
+                    <button class="button-footer">
+                        Запросить звонок
+                    </button>
+                </label>
+                <div class="pusto"></div>
+            </div>
+        </footer>
+    </body>
+
+</html>

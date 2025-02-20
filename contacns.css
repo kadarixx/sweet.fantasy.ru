@@ -1,0 +1,149 @@
+.h2-1 {
+    font-family: 'Roboto', sans-serif; /* Выбор красивого шрифта */
+    color: #dcba9f; /* Цвет текста */
+    font-size: 30px; /* Размер шрифта */
+    text-transform: uppercase; /* Преобразование текста в верхний регистр */
+    text-shadow: 2px 2px #000; /* Тень для текста */
+    box-sizing: border-box;
+    padding: 0;
+    display: inline-block;
+    margin-left: 20px;
+    margin-top: 20px;
+}   
+
+header {
+    background-color:  #ffffff;
+    width: 100%;
+}
+
+body {
+    margin: 0;
+}
+
+.a-glav {
+    padding: 0;
+    text-decoration: none;
+    margin-left: 50px;
+    font-size: 20px;
+    font-family:  'Roboto', sans-serif;
+    color: #593e28;
+} 
+
+.pusto {
+    margin: 100px;
+}
+
+
+footer {
+    background-color: #593e28;
+    width: 100%;
+}
+
+.div-footer {
+    font-family: Arial, Helvetica, sans-serif;
+    display: inline-block;
+    font-size: 13px;
+    color: #dcba9f;
+}
+
+.a-footer {
+    position: absolute;
+    color: rgb(219, 179, 142);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 23px;
+    text-decoration: none;
+    margin-left: 200px;
+    margin-top: 30px;
+}
+
+.a-footer-2 {
+    position: absolute;
+    color: rgb(219, 179, 142);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 23px;
+    text-decoration: none;
+    margin-left: 200px;
+    margin-top: 80px;
+}
+
+.a-footer-3 {
+    position: absolute;
+    color: rgb(219, 179, 142);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    text-decoration: none;
+    margin-left: 500px;
+    margin-top: 30px;
+
+}
+
+.a-footer-4 {
+    position: absolute;
+    color: rgb(219, 179, 142);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    text-decoration: none;
+    margin-left: 500px;
+    margin-top: 80px;
+}
+
+.a-footer-5 {
+     position: absolute;
+    color: rgb(219, 179, 142);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    text-decoration: none;
+    margin-left: 800px;
+    margin-top: 30px;
+    
+}
+
+.button-footer {
+    padding: 1em;
+    margin-left: 200px;
+    display: block;
+    margin-top: 150px;
+    background: transparent;
+    border: 1px solid  #dcba9f;
+    border-radius: 10px;
+    width: 40%;
+    color:  #dcba9f;
+    position: relative;
+    display: inline-block;
+}
+
+.h1-cont {
+    margin-left: 100px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.h2-main {
+    margin-left: 100px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 30px;
+}
+
+.h3-adress {
+    margin-left: 100px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 30px;
+}
+
+.div-adressa {
+    margin-left: 100px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 30px;
+}
+
+.contacts {
+    margin-left: 100px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 30px;
+}
+
+.my-map {
+    height: 400px;
+    width: 400px;
+    margin-left: 1000px;
+    margin-top: -340px;
+}

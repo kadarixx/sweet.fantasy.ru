@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="stylesheet" href="styles/form.css">
+    <title>Вход</title>
+</head>
+<body>
+    <div class="container">
+        <div class="signin-signup">
+            <form class="sign-in-form" action="php/enter.php" method="POST" >
+                <h2 class="title">Вход</h2>
+                <div class="input-field">
+                    <i class="fas fa-user"></i>
+                    <input name="username" type="text" placeholder="Имя">
+                </div>
+                <div class="input-field">
+                    <i class="fas fa-lock"></i>
+                    <input name="password" type="password" placeholder="Пароль">
+                </div>
+                <input type="submit" value="Войти" class="btn">
+                <p class="social-text">Использовать аккаунт</p>
+                <div class="social-media">
+                    <a href="#" class="social-icon">
+                        <i class="fab fa-vk"></i>
+                    </a>
+                    <a href="" class="social-icon">
+                        <i class="fab fa-yandex"></i>
+                    </a>
+                    <a href="" class="social-icon">
+                        <i class="fab fa-google"></i>
+                    </a>
+                    <a href="" class="social-icon">
+                        <i class="fab fa-telegram"></i>
+                    </a>
+                </div>
+                <p class="account-text">Еще не с нами? <a href="#" id="sign-up-btn2">Регистрация</a></p>
+            </form>
+            <form class="sign-up-form" action="php/reg.php" method="POST" >
+                <h2 class="title">Регистрация</h2>
+                <div class="input-field">
+                    <i class="fas fa-user"></i>
+                    <input name="username" type="text" placeholder="Имя">
+                </div>
+                <div class="input-field">
+                    <i class="fas fa-envelope"></i>
+                    <input name="email" type="text" placeholder="Почта">
+                </div>
+                <div class="input-field">
+                    <i class="fas fa-lock"></i>
+                    <input name="password" type="password" placeholder="Пароль">
+                </div>
+                <input type="submit" value="Регистрация" class="btn">
+                <p class="social-text">Использовать аккаунт</p>
+                <div class="social-media">
+                    <a href="#" class="social-icon">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                    <a href="" class="social-icon">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="" class="social-icon">
+                        <i class="fab fa-google"></i>
+                    </a>
+                    <a href="" class="social-icon">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                </div>
+                <p class="account-text">Уже есть аккаунт? <a href="#" id="sign-in-btn2">Войти</a></p>
+            </form>
+        </div>
+        <div class="panels-container">
+            <div class="panel left-panel">
+                <div class="content">
+                    <h3>Уже есть аккаунт?</h3>
+                    
+                    <button class="btn" id="sign-in-btn">Войти</button>
+                </div>
+                <img src="signin.svg" alt="" class="image">
+            </div>
+            <div class="panel right-panel">
+                <div class="content">
+                    <h3>Еще не с нами?</h3>
+                   
+                    <button class="btn" id="sign-up-btn">Регистрация</button>
+                </div>
+                <img src="signup.svg" alt="" class="image">
+            </div>
+        </div>
+    </div>
+    <script src="js/form.js"></script>
+</body> 
+</html>
